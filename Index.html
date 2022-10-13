@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" href="./assets/img/favicon-academlo.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@10.10.1/dist/sweetalert2.min.css">
+</head>
+<body>
+    <section>
+        <div class="izquierda"></div>
+        <div class="section_principal">
+            <nav class="navbar ">
+                <div>
+                    <span><img class="logo" src="./assets/img/academlo.png"> </span>
+                    <ul class="nav-menu">
+                        <li><a class="nav-link " href="#">STORE</a></li>
+                        <li><a class="nav-link nav-link_one"  href="#">Home</a></li>
+                        <li><a class="nav-link" href="#tarjetasContenedor">Products</a></li>
+                    </ul>
+                </div>
+                <div class="carrito">
+                  <div class="switch ">
+                    <button class="prender_apagar" id="prender_apagar">
+                    <img class="img-theme" src="./assets/img/bx-moon.png">
+                  </button>                    
+                  <button type="button" class="carrito_img" href="#">
+                    <img src="./assets/img/cart.svg">
+                    <span class="total_prod">0</span>
+                  </button>
+                  <div class="hamburger">
+                      <span class="bar"></span>
+                      <span class="bar"></span>
+                      <span class="bar"></span>
+                  </div>                 
+                </div>
+                </div>
+            </nav>
+            <div class="main">
+                <div class="add_to_cart">
+                    <p class="center">New Sweatshirt <br>COLLECTIONS 2022</p>
+                    <p class="justify">Latest arrival of the new Hanes Midweight
+                        Crewneck sweatshirt imported from the
+                        2022 series, with a modern design.</p>
+                    <p class="center">$14.00</p>
+                    <div class="buttons">
+                        <div class="button_dis">
+                        <button type="button" name="discover">Discover</button>
+                    </div>
+                    <div class="button_add">
+                        <button type="button" name="cart">ADD TO CART</button>
+                    </div>
+                    </div>
+                </div>
+                <div class="image">
+                    <img src="./assets/img/featured1.png">
+                </div>
+            </div>
+            <div class="view" id="view"></div>
+            <div class="contenedor__principal">
+                <main class="contenedor contenido">
+                <section id="tarjetasContenedor" class="seccion__tarjetas"></section>
+                </main>
+            </div>
+            <div class="footer_one">
+                <div class="footer_one_f">
+                    <p>Our information</p>
+                    <a class="footer-link" href="#">Asuncion - Paraguay</a>
+                </div>
+                <div class="footer_one_s">
+                    <p>About Us</p>
+                    <a class="footer-link" href="#">Support Center</a>
+                    <a class="footer-link" href="#">Customer Support</a>
+                    <a class="footer-link" href="#">About Us</a>
+                    <a class="footer-link" href="#">Copy Right</a>
+                </div>
+                <div class="footer_one_t">
+                    <p>Product</p>
+                    <a class="footer-link" href="#">Hoodies</a>
+                    <a class="footer-link" href="#">Shirts</a>
+                    <a class="footer-link" href="#">Sweatshirts</a>
+                </div>
+                <div class="footer_one_c">
+                    <p>Social</p>
+                    <div>
+                        <img class="face" src="./assets/img/facebook.png">
+                        <img class="twiter" src="./assets/img/twitter.svg">
+                        <img class="instagram" src="./assets/img/instagram.svg">
+                    </div>
+                </div>
+            </div>
+            <div class="footer_twue">
+                <p>© ACADEMLO. All rigths reserved</p>
+            </div>
+        </div>
+        <div class="contenedor_section_myCard">
+            <div class="carrito2">
+                <button type="button" class="carrito_img2" href="#"><img src="./assets/img/X.svg"></button>
+            </div>
+            <H2>My Cart</H2>
+            <H3>Your cart is empty</H3>
+            <p>You can add items to your cart by clicking on the "" button on the product page.</p>
+<!--                <div class="font_my_cart">
+                    <span><img class="logo" id="logo" src="./assets/img/empty-cart.png"> </span>
+               </div>  -->
+            <div id="section_myCard" class="section_myCard">
+                <div class="section_one">
+                    <table class="table">
+                        <tbody id="items"></tbody>
+                        <tfoot>
+                            <tr id="footer">
+                                <th scope="row" colspan="5"></th>
+                            </tr>
+                        </tfoot>
+                    </table>
+                    <div class="row" class="cards"></div>
+                </div>
+                <template id="template-footer" class="section_footer">
+                    <div class="section_footerr">
+                        <div>
+                            <p class="total_prod">total productos</p>
+                            <p>&nbsp items</p>
+                        </div>
+                        <div class="bas">
+                                <button class="vaciar-carrito" id="vaciar-carrito"><img src="./assets/img//order-checkout.svg"></button>
+                        </div>
+                        <div>
+                                <p class="mont_total">$<span>5000</span></p>
+                        </div>
+                    </div>
+                </template>
+                <template id="template-carrito" class="template-carrito">
+                    <div class="img_peq">
+                    </div>
+                    <div class="carrito_tarjeta">
+                        <img class="img_col" src="./assets/img/featured1j.png">
+                        <p >Cafe</p>
+                        <p>Stock</p>
+                        <p>14</p>
+                        <p>1</p>
+                        
+                        <p class="precio">Sub Total: $<span>500</span></p>
+                            <div class="button_plus">
+                                <button class="btn btn-info btn-sm">+</button>
+                            </div>
+                            <div class="button_men">
+                                <button class="btn btn-danger btn-sm">-</button>
+                            </div>
+                            
+                    </div>
+                </template>
+            </div>
+        </div>
+    </section>
+    <script src="./assets/js/ecommerce.js" type="module"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10.10.1/dist/sweetalert2.all.min.js"></script>
+    <script>const cabezeraTop = document.querySelector(".navbar");window.onscroll=function(){let y = window.scrollY;if(y>1){cabezeraTop.classList.add('navbarDinamico');}else{cabezeraTop.classList.remove('navbarDinamico');}}</script>
+</body>
+</html>  
